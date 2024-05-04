@@ -33,40 +33,43 @@ function Menu() {
   return (
     //Desktop Menu
     <>
-      <div className="fixed top-0 h-screen lg:block hidden">
-        <div className="flex flex-col mt-10 ml-10 gap-5">
-          <h1 className="text-[#FFDF00] font-sans">FLAME</h1>
-          <div className="flex flex-row items-center justify-start gap-2">
-            <img src={first} className="h-[32px] w-[32px]" />
-            <h1 className="text-[#C2C3CF]">Dashboard</h1>
+      <div className="fixed top-0 h-screen lg:block hidden ">
+        <div className="flex flex-col gap-[483px]">
+          <div className="flex flex-col mt-10 ml-10 gap-5">
+            <h1 className="text-[#FFDF00] font-sans">FLAME</h1>
+            <div className="flex flex-row items-center justify-start gap-2">
+              <img src={first} className="h-[32px] w-[32px]" />
+              <h1 className="text-[#C2C3CF]">Dashboard</h1>
+            </div>
+            <div className="flex flex-row items-center justify-start gap-2">
+              <img src={second} className="h-[32px] w-[32px]" />
+              <h1 className="text-[#C2C3CF]">Play</h1>
+            </div>
+            <div className="flex flex-row items-center justify-start gap-2">
+              <img src={third} className="h-[32px] w-[32px]" />
+              <h1 className="text-[#C2C3CF]">Tournament</h1>
+            </div>
+            <div className="flex flex-row items-center justify-start gap-2">
+              <img src={fourth} className="h-[32px] w-[32px]" />
+              <h1 className="text-[#C2C3CF]">Upcoming Contest</h1>
+            </div>
+            <div className="flex flex-row items-center justify-start gap-2">
+              <img src={fifth} className="h-[32px] w-[32px]" />
+              <h1 className="text-[#C2C3CF]">Watch</h1>
+            </div>
+            <div className="flex flex-row items-center justify-start gap-2">
+              <img src={sixth} className="h-[32px] w-[32px]" />
+              <h1 className="text-[#C2C3CF]">Leaderboard</h1>
+            </div>
           </div>
-          <div className="flex flex-row items-center justify-start gap-2">
-            <img src={second} className="h-[32px] w-[32px]" />
-            <h1 className="text-[#C2C3CF]">Play</h1>
-          </div>
-          <div className="flex flex-row items-center justify-start gap-2">
-            <img src={third} className="h-[32px] w-[32px]" />
-            <h1 className="text-[#C2C3CF]">Tournament</h1>
-          </div>
-          <div className="flex flex-row items-center justify-start gap-2">
-            <img src={fourth} className="h-[32px] w-[32px]" />
-            <h1 className="text-[#C2C3CF]">Upcoming Contest</h1>
-          </div>
-          <div className="flex flex-row items-center justify-start gap-2">
-            <img src={fifth} className="h-[32px] w-[32px]" />
-            <h1 className="text-[#C2C3CF]">Watch</h1>
-          </div>
-          <div className="flex flex-row items-center justify-start gap-2">
-            <img src={sixth} className="h-[32px] w-[32px]" />
-            <h1 className="text-[#C2C3CF]">Leaderboard</h1>
-          </div>
-          <div className="flex flex-row items-center justify-start gap-2 mt-[480px]">
+          <div className="flex flex-row items-center justify-start gap-2 ml-10">
             <img src={logout} className="h-[32px] w-[32px]" />
             <h1 className="text-[#C2C3CF] font-thin">Logout</h1>
           </div>
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <div className="sticky top-0 z-50">
         <nav
           className={`lg:hidden px-2 smd:px-4 relative w-full h-[50px]`}
@@ -156,7 +159,7 @@ function Menu() {
           {toggle2 ? (
             <div
               id="drawer-right-example"
-              className="fixed top-0 right-0 z-40 w-30% h-full p-4  overflow-y-auto transition-transform bg-[#000000] opacity-[0.90]"
+              className="fixed top-0 right-0 z-40 w-full h-full p-4  overflow-y-auto transition-transform bg-[#000000] opacity-[0.90]"
             >
               <button
                 ref={closeButton2}

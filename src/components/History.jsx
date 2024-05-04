@@ -17,8 +17,12 @@ function History() {
         <h1 className="text-white font-sans">Sumit Shandillya</h1>
       </div>
       <div className="flex flex-row items-center 2xl:gap-20 xl:gap-14 lg:gap-8 md:gap-5 gap-5 mr-5">
-        <h1 className="text-[#CBD1E1] font-sans font-thin">140891.89</h1>
-        <h1 className="text-[#CBD1E1] font-sans font-thin">(200 targets)</h1>
+        <h1 className="text-[#CBD1E1] font-sans font-thin lg:block hidden">
+          140891.89
+        </h1>
+        <h1 className="text-[#CBD1E1] font-sans font-thin lg:block hidden">
+          (200 targets)
+        </h1>
         <h1 className="text-[#CBD1E1] font-abc font-thin text-3xl">#04</h1>
       </div>
     </div>
