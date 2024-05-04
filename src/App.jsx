@@ -1,21 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Menu from "./components/Menu";
-import PlayOptions from "./components/PlayOptions";
-import Stats from "./components/Stats";
+import Dashboard from "./pages/Dashboard";
+import Leaderboards_page from "./pages/Leaderboards_page";
 
 function App() {
   return (
-    <div className="grid lg:grid-cols-12 h-screen w-screen">
-      <div className="lg:col-span-2">
-        <Menu />
-      </div>
-      <div className="lg:col-span-7 lg:border-l-[0.4px] border-[#ffffff38]">
-        <PlayOptions />
-      </div>
-      <div className="lg:col-span-3 lg:block hidden">
-        <Stats />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Dashboard />} />
+        <Route exact path="/leaderboards" element={<Leaderboards_page />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

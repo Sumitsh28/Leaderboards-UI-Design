@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import { IoMdCloseCircle } from "react-icons/io";
 import { CgMenu } from "react-icons/cg";
 import { HiDotsVertical } from "react-icons/hi";
-import Leaderboards from "./Leaderboards";
 import Stats from "./Stats";
 
 function Menu() {
@@ -37,32 +36,49 @@ function Menu() {
         <div className="flex flex-col gap-[483px]">
           <div className="flex flex-col mt-10 ml-10 gap-5">
             <h1 className="text-[#FFDF00] font-sans">FLAME</h1>
-            <div className="flex flex-row items-center justify-start gap-2">
-              <img src={first} className="h-[32px] w-[32px]" />
-              <h1 className="text-[#C2C3CF]">Dashboard</h1>
-            </div>
-            <div className="flex flex-row items-center justify-start gap-2">
-              <img src={second} className="h-[32px] w-[32px]" />
-              <h1 className="text-[#C2C3CF]">Play</h1>
-            </div>
-            <div className="flex flex-row items-center justify-start gap-2">
-              <img src={third} className="h-[32px] w-[32px]" />
-              <h1 className="text-[#C2C3CF]">Tournament</h1>
-            </div>
-            <div className="flex flex-row items-center justify-start gap-2">
-              <img src={fourth} className="h-[32px] w-[32px]" />
-              <h1 className="text-[#C2C3CF]">Upcoming Contest</h1>
-            </div>
-            <div className="flex flex-row items-center justify-start gap-2">
-              <img src={fifth} className="h-[32px] w-[32px]" />
-              <h1 className="text-[#C2C3CF]">Watch</h1>
-            </div>
-            <div className="flex flex-row items-center justify-start gap-2">
-              <img src={sixth} className="h-[32px] w-[32px]" />
-              <h1 className="text-[#C2C3CF]">Leaderboard</h1>
-            </div>
+            <Link to={"/"}>
+              <div className="flex flex-row items-center justify-start gap-2">
+                <img src={first} className="h-[32px] w-[32px]" />
+                <h1 className="text-[#C2C3CF]">Dashboard</h1>
+              </div>
+            </Link>
+
+            <Link to={"/play"}>
+              <div className="flex flex-row items-center justify-start gap-2">
+                <img src={second} className="h-[32px] w-[32px]" />
+                <h1 className="text-[#C2C3CF]">Play</h1>
+              </div>
+            </Link>
+
+            <Link to={"/tournament"}>
+              <div className="flex flex-row items-center justify-start gap-2">
+                <img src={third} className="h-[32px] w-[32px]" />
+                <h1 className="text-[#C2C3CF]">Tournament</h1>
+              </div>
+            </Link>
+
+            <Link to={"/contest"}>
+              <div className="flex flex-row items-center justify-start gap-2">
+                <img src={fourth} className="h-[32px] w-[32px]" />
+                <h1 className="text-[#C2C3CF]">Upcoming Contest</h1>
+              </div>
+            </Link>
+
+            <Link to={"/watch"}>
+              <div className="flex flex-row items-center justify-start gap-2">
+                <img src={fifth} className="h-[32px] w-[32px]" />
+                <h1 className="text-[#C2C3CF]">Watch</h1>
+              </div>
+            </Link>
+
+            <Link to={"/leaderboards"}>
+              <div className="flex flex-row items-center justify-start gap-2">
+                <img src={sixth} className="h-[32px] w-[32px]" />
+                <h1 className="text-[#C2C3CF]">Leaderboard</h1>
+              </div>
+            </Link>
           </div>
-          <div className="flex flex-row items-center justify-start gap-2 ml-10">
+          <div className="flex flex-row items-center justify-start gap-2 ml-10 cursor-pointer">
             <img src={logout} className="h-[32px] w-[32px]" />
             <h1 className="text-[#C2C3CF] font-thin">Logout</h1>
           </div>
@@ -124,31 +140,48 @@ function Menu() {
               </button>
 
               <div className="flex flex-col mt-20 ml-6 gap-8">
-                <div className="flex flex-row items-center justify-start gap-2">
-                  <img src={first} className="h-[32px] w-[32px]" />
-                  <h1 className="text-[#C2C3CF]">Dashboard</h1>
-                </div>
-                <div className="flex flex-row items-center justify-start gap-2">
-                  <img src={second} className="h-[32px] w-[32px]" />
-                  <h1 className="text-[#C2C3CF]">Play</h1>
-                </div>
-                <div className="flex flex-row items-center justify-start gap-2">
-                  <img src={third} className="h-[32px] w-[32px]" />
-                  <h1 className="text-[#C2C3CF]">Tournament</h1>
-                </div>
-                <div className="flex flex-row items-center justify-start gap-2">
-                  <img src={fourth} className="h-[32px] w-[32px]" />
-                  <h1 className="text-[#C2C3CF]">Upcoming Contest</h1>
-                </div>
-                <div className="flex flex-row items-center justify-start gap-2">
-                  <img src={fifth} className="h-[32px] w-[32px]" />
-                  <h1 className="text-[#C2C3CF]">Watch</h1>
-                </div>
-                <div className="flex flex-row items-center justify-start gap-2">
-                  <img src={sixth} className="h-[32px] w-[32px]" />
-                  <h1 className="text-[#C2C3CF]">Leaderboard</h1>
-                </div>
-                <div className="flex flex-row items-center justify-start gap-2">
+                <Link to={"/"}>
+                  <div className="flex flex-row items-center justify-start gap-2">
+                    <img src={first} className="h-[32px] w-[32px]" />
+                    <h1 className="text-[#C2C3CF]">Dashboard</h1>
+                  </div>
+                </Link>
+
+                <Link to={"/play"}>
+                  <div className="flex flex-row items-center justify-start gap-2">
+                    <img src={second} className="h-[32px] w-[32px]" />
+                    <h1 className="text-[#C2C3CF]">Play</h1>
+                  </div>
+                </Link>
+
+                <Link to={"/tournament"}>
+                  <div className="flex flex-row items-center justify-start gap-2">
+                    <img src={third} className="h-[32px] w-[32px]" />
+                    <h1 className="text-[#C2C3CF]">Tournament</h1>
+                  </div>
+                </Link>
+
+                <Link to={"/contest"}>
+                  <div className="flex flex-row items-center justify-start gap-2">
+                    <img src={fourth} className="h-[32px] w-[32px]" />
+                    <h1 className="text-[#C2C3CF]">Upcoming Contest</h1>
+                  </div>
+                </Link>
+
+                <Link to={"/watch"}>
+                  <div className="flex flex-row items-center justify-start gap-2">
+                    <img src={fifth} className="h-[32px] w-[32px]" />
+                    <h1 className="text-[#C2C3CF]">Watch</h1>
+                  </div>
+                </Link>
+
+                <Link to={"/leaderboards"}>
+                  <div className="flex flex-row items-center justify-start gap-2">
+                    <img src={sixth} className="h-[32px] w-[32px]" />
+                    <h1 className="text-[#C2C3CF]">Leaderboard</h1>
+                  </div>
+                </Link>
+                <div className="flex flex-row items-center justify-start gap-2 cursor-pointer">
                   <img src={logout} className="h-[32px] w-[32px]" />
                   <h1 className="text-[#C2C3CF] font-thin">Logout</h1>
                 </div>

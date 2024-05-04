@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Users from "./Users";
+import { Link } from "react-router-dom";
 
 const Leaderboards = () => {
   const [activeTab, setActiveTab] = useState("global");
@@ -60,9 +61,11 @@ const Leaderboards = () => {
         </AnimatePresence>
       </div>
 
-      <button className="bg-[#323F4A] w-[250px] h-[38.4px] rounded-full text-white cursor-pointer ml-12">
-        See Top 100
-      </button>
+      <Link to="/leaderboards">
+        <button className="bg-[#323F4A] w-[250px] h-[38.4px] rounded-full text-white cursor-pointer ml-12">
+          See Top 100
+        </button>
+      </Link>
     </div>
   );
 };
