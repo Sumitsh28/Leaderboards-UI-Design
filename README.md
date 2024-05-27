@@ -1,8 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Unfluke Assignment
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+Built using React.js
+
+- Added Search feature for filtering
+- Added Sorting feature
+- Added Responsiveness for all screen sizes
+- Glassomorphic Design
+- Added Transitions
+
+
+
+
+![Logo](https://github.com/Sumitsh28/Unfluke_Assignment/blob/main/src/assets/Screenshot%202024-05-27%20at%204.49.24%E2%80%AFPM.png?raw=true)
+
+
+
+
+
