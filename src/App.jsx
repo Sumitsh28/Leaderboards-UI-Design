@@ -1,14 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Dashboard from "./pages/Dashboard";
-import Leaderboards_page from "./pages/Leaderboards_page";
+import LeaderBoards from "./pages/Leaderboards";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/leaderboards" element={<Leaderboards_page />} />
+        <Route exact path="/" element={<LeaderBoards />} />
       </Routes>
     </BrowserRouter>
   );
